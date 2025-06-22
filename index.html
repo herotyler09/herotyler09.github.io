@@ -9,16 +9,24 @@
     <meta name="google-site-verification" content="1cbgIUGgCrmOUqBMIGCn5foD4ZL0wfHKDL_gxe-G0vU" />
 
     <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
             background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .content {
+            flex: 1;
         }
         .game-container {
             display: flex;
             justify-content: center;
             gap: 20px;
             margin-top: 50px;
+            flex-wrap: wrap;
         }
         .game {
             text-align: center;
@@ -35,7 +43,6 @@
             transform: scale(1.1);
         }
         footer {
-            margin-top: 60px;
             padding: 20px;
             background-color: #ddd;
             color: #333;
@@ -44,25 +51,27 @@
     </style>
 </head>
 <body>
-    <h1>Select a Game to Play</h1>
-    <div class="game-container">
-        <div class="game">
-            <a href="https://studio.code.org/projects/applab/8u5QW5yuebz8jV4K0pzH8_r8ZiBI0rnpGacg7K67Z5U" target="_blank">
-                <img src="RogueWarriorLogo.png" alt="Rogue Warrior">
-            </a>
-            <p>Rogue Warrior</p>
-        </div>
-        <div class="game">
-            <a href="https://studio.code.org/projects/applab/m8mpvgEO5lucd0PyOuD4DeGibxozz6lbXjxcTy9610Y" target="_blank">
-                <img src="RogueGamblerLogo.png" alt="Rogue Gambler">
-            </a>
-            <p>Rogue Gambler</p>
-        </div>
-        <div class="game">
-            <a href="https://studio.code.org/projects/applab/WmKsSh6KtNTCzmxXP-vZi7NuKgv4L2j5MHUdSnj3NG0" target="_blank">
-                <img src="RogueArenaLogo.png" alt="Rogue Arena">
-            </a>
-            <p>Rogue Arena</p>
+    <div class="content">
+        <h1>Select a Game to Play</h1>
+        <div class="game-container">
+            <div class="game">
+                <a href="https://studio.code.org/projects/applab/8u5QW5yuebz8jV4K0pzH8_r8ZiBI0rnpGacg7K67Z5U" target="_blank">
+                    <img src="RogueWarriorLogo.png" alt="Rogue Warrior">
+                </a>
+                <p>Rogue Warrior</p>
+            </div>
+            <div class="game">
+                <a href="https://studio.code.org/projects/applab/m8mpvgEO5lucd0PyOuD4DeGibxozz6lbXjxcTy9610Y" target="_blank">
+                    <img src="RogueGamblerLogo.png" alt="Rogue Gambler">
+                </a>
+                <p>Rogue Gambler</p>
+            </div>
+            <div class="game">
+                <a href="https://studio.code.org/projects/applab/WmKsSh6KtNTCzmxXP-vZi7NuKgv4L2j5MHUdSnj3NG0" target="_blank">
+                    <img src="RogueArenaLogo.png" alt="Rogue Arena">
+                </a>
+                <p>Rogue Arena</p>
+            </div>
         </div>
     </div>
 
